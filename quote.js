@@ -18,7 +18,7 @@ class QuoteGenerator extends React.Component {
   ask() {
     
       this.setState({
-        randomIndex: Math.floor(Math.random() * 7),
+        randomIndex: Math.floor(Math.random() * 26),
         userInput: ''
       });
     }
@@ -28,9 +28,29 @@ class QuoteGenerator extends React.Component {
     });
   }
   render() {
-    const quotesList = [["I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.", "Marilyn Monroe"],["Be yourself; everyone else is already taken.", "Oscar Wilde"], ["Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", "Albert Einstein"], ["A room without books is like a body without a soul.", "Marcus Tullius Cicero"], ["You only live once, but if you do it right, once is enough.", "Mae West"], ["If you tell the truth, you don't have to remember anything.", "Mark Twain"], ["Always forgive your enemies; nothing annoys them so much.", "Oscar Wilde"], ["Live as if you were to die tomorrow. Learn as if you were to live forever.", "Mahatma Gandhi"]];
+    const quotesList = [["It was when I realized I needed to stop trying to be somebody else and be myself, I actually started to own, accept and love what I had.", "Tracee Ellis Ross"],["Don't settle for average. Bring your best to the moment. Then, whether it fails or succeeds, at least you know you gave all you had. We need to live the best that's in us", "Angela Bassett"], ["What I know for sure is that speaking your truth is the most powerful tool we all have." , "Oprah Winfrey"],
+["If you prioritize yourself, you are going to save yourself.", "Gabrielle Union"],
+["It is so liberating to really know what I want, what truly makes me happy, what I will not tolerate. I have learned that it is no one else's job to take care of me but me.", "Beyonce Carter Knowles"],
+["My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.", "Maya Angelou"], ["I thrive on obstacles. If I'm told that it can't be told, then I push harder.", "Issa Rae"],
+["I have standards I don't plan on lowering for anybody … including myself.", "Zendaya"],
+["You may not always have a comfortable life and you will not always be able to solve all of the world's problems at once but don't ever underestimate the importance you can have because history has shown us that courage can be contagious and hope can take on a life of its own.", "Michelle Obama"],
+["If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off... no matter what they say.", "Barbara McClintock"],
+["Certain people – men, of course – discouraged me, saying science was not a good career for women. That pushed me even more to persevere.", "Francoise Barre"],
+["Science, for me, gives a partial explanation for life. In so far as it goes, it is based on fact, experience and experiment.", "Rosalind Franklin"], ["Let us choose for ourselves our path in life, and let us try to strew that path with flowers.", "Emilie du Chatelet"],
+["Don't let anyone rob you of your imagination, your creativity, or your curiosity. It's your place in the world; it's your life. Go on and do all you can with it, and make it the life you want to live.", "Dr. Mae Jemison"],
+["I was taught that the way of progress was neither swift nor easy.", "Marie Curie"],
+["Life need not be easy, provided only that it is not empty.", "Lisa Meitner"],
+["We are showing people that engineering isn’t just the physics of how a transistor works. It’s using the technology, and being creative with it, and solving problems that people have or creating something beautiful with it. And I think that’s opening up engineering to a whole new group of people that maybe never would have thought that engineering was for them.", "Limor Fried"],
+["Humans are allergic to change. They love to say, ‘We’ve always done it this way.’ I try to fight that. That’s why I have a clock on my wall that runs counterclockwise.", "Grace Hopper"],
+["They never asked me to go back over my calculations because when I did it, I had done my best, and it was right.", "Katherine Johnson"],
+["When I first started using the phrase software engineering, it was considered to be quite amusing. They used to kid me about my radical ideas. Software eventually and necessarily gained the same respect as any other discipline.", "Margaret Hamilton"],
+["When I started my career at the Bar, I did not look or sound like what my clients expected. I had to prove myself continuously, which was difficult but ultimately useful as it meant that I always had to be at the top of my game.", "Janet Oganah"],
+["We need to understand that if we all work on inclusion together, it’s going to be faster, broader, better, and more thorough than anything we can do on our own.", "Ellen Pao"], ["Theoretically, I have no business starting an organization called Girls Who Code, because I don’t code … When I first started, I wasn’t intending to build a movement. I was planning to do one summer program to see what we could do differently to get more girls in technology.", "Reshma Saujani"],["I am a quote", "Bob"],
+["The quality, relevance, and impact of the products and services output by the technology sector can only be improved by having the people who are building them be demographically representative of the people who are using them.", "Tracy Chou"],
+["It’s not enough to be aware of the possibilities. You have to believe that your goals are attainable. First, can you see yourself, picture yourself as an engineer? I strongly believe that belief in yourself stems from belief in your role models.", "Alisha Ramos"],
+["The world would be a better place if more engineers, like me, hated technology. The stuff I design, if I’m successful, nobody will ever notice. Things will just work, and be self-managing.,", "Radia Pearlman"]];
     const answer = quotesList[this.state.randomIndex][0];
-    const author = quotesList[this.state.randomIndex][1];// << change code here
+    const author = quotesList[this.state.randomIndex][1];
     return (
       <div>
         <button onClick={this.ask}>
@@ -38,7 +58,7 @@ class QuoteGenerator extends React.Component {
         </button><br />
         <h3>Quote</h3>
         <p>
-          {answer}<br/>
+{answer}<br/>
           {author}
         </p>
       </div>
@@ -46,7 +66,6 @@ class QuoteGenerator extends React.Component {
   }
 };
 ReactDOM.render(<QuoteGenerator />, document.getElementById('challenge-node')); */
-
 "use strict";
 
 function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return right[Symbol.hasInstance](left); } else { return left instanceof right; } }
@@ -98,7 +117,7 @@ function (_React$Component) {
     key: "ask",
     value: function ask() {
       this.setState({
-        randomIndex: Math.floor(Math.random() * 7),
+        randomIndex: Math.floor(Math.random() * 26),
         userInput: ''
       });
     }
@@ -112,10 +131,9 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var quotesList = [["I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.", "Marilyn Monroe"], ["Be yourself; everyone else is already taken.", "Oscar Wilde"], ["Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", "Albert Einstein"], ["A room without books is like a body without a soul.", "Marcus Tullius Cicero"], ["You only live once, but if you do it right, once is enough.", "Mae West"], ["If you tell the truth, you don't have to remember anything.", "Mark Twain"], ["Always forgive your enemies; nothing annoys them so much.", "Oscar Wilde"], ["Live as if you were to die tomorrow. Learn as if you were to live forever.", "Mahatma Gandhi"]];
+      var quotesList = [["It was when I realized I needed to stop trying to be somebody else and be myself, I actually started to own, accept and love what I had.", "Tracee Ellis Ross"], ["Don't settle for average. Bring your best to the moment. Then, whether it fails or succeeds, at least you know you gave all you had. We need to live the best that's in us", "Angela Bassett"], ["What I know for sure is that speaking your truth is the most powerful tool we all have.", "Oprah Winfrey"], ["If you prioritize yourself, you are going to save yourself.", "Gabrielle Union"], ["It is so liberating to really know what I want, what truly makes me happy, what I will not tolerate. I have learned that it is no one else's job to take care of me but me.", "Beyonce Carter Knowles"], ["My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.", "Maya Angelou"], ["I thrive on obstacles. If I'm told that it can't be told, then I push harder.", "Issa Rae"], ["I have standards I don't plan on lowering for anybody … including myself.", "Zendaya"], ["You may not always have a comfortable life and you will not always be able to solve all of the world's problems at once but don't ever underestimate the importance you can have because history has shown us that courage can be contagious and hope can take on a life of its own.", "Michelle Obama"], ["If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off... no matter what they say.", "Barbara McClintock"], ["Certain people – men, of course – discouraged me, saying science was not a good career for women. That pushed me even more to persevere.", "Francoise Barre"], ["Science, for me, gives a partial explanation for life. In so far as it goes, it is based on fact, experience and experiment.", "Rosalind Franklin"], ["Let us choose for ourselves our path in life, and let us try to strew that path with flowers.", "Emilie du Chatelet"], ["Don't let anyone rob you of your imagination, your creativity, or your curiosity. It's your place in the world; it's your life. Go on and do all you can with it, and make it the life you want to live.", "Dr. Mae Jemison"], ["I was taught that the way of progress was neither swift nor easy.", "Marie Curie"], ["Life need not be easy, provided only that it is not empty.", "Lisa Meitner"], ["We are showing people that engineering isn’t just the physics of how a transistor works. It’s using the technology, and being creative with it, and solving problems that people have or creating something beautiful with it. And I think that’s opening up engineering to a whole new group of people that maybe never would have thought that engineering was for them.", "Limor Fried"], ["Humans are allergic to change. They love to say, ‘We’ve always done it this way.’ I try to fight that. That’s why I have a clock on my wall that runs counterclockwise.", "Grace Hopper"], ["They never asked me to go back over my calculations because when I did it, I had done my best, and it was right.", "Katherine Johnson"], ["When I first started using the phrase software engineering, it was considered to be quite amusing. They used to kid me about my radical ideas. Software eventually and necessarily gained the same respect as any other discipline.", "Margaret Hamilton"], ["When I started my career at the Bar, I did not look or sound like what my clients expected. I had to prove myself continuously, which was difficult but ultimately useful as it meant that I always had to be at the top of my game.", "Janet Oganah"], ["We need to understand that if we all work on inclusion together, it’s going to be faster, broader, better, and more thorough than anything we can do on our own.", "Ellen Pao"], ["Theoretically, I have no business starting an organization called Girls Who Code, because I don’t code … When I first started, I wasn’t intending to build a movement. I was planning to do one summer program to see what we could do differently to get more girls in technology.", "Reshma Saujani"], ["I am a quote", "Bob"], ["The quality, relevance, and impact of the products and services output by the technology sector can only be improved by having the people who are building them be demographically representative of the people who are using them.", "Tracy Chou"], ["It’s not enough to be aware of the possibilities. You have to believe that your goals are attainable. First, can you see yourself, picture yourself as an engineer? I strongly believe that belief in yourself stems from belief in your role models.", "Alisha Ramos"], ["The world would be a better place if more engineers, like me, hated technology. The stuff I design, if I’m successful, nobody will ever notice. Things will just work, and be self-managing.,", "Radia Pearlman"]];
       var answer = quotesList[this.state.randomIndex][0];
-      var author = quotesList[this.state.randomIndex][1]; // << change code here
-
+      var author = quotesList[this.state.randomIndex][1];
       return React.createElement("div", null, React.createElement("button", {
         onClick: this.ask
       }, "Get a random quote"), React.createElement("br", null), React.createElement("h3", null, "Quote"), React.createElement("p", null, answer, React.createElement("br", null), author));
